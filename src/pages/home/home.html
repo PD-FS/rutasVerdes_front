@@ -28,7 +28,11 @@
               Ver quebradas.
               <ion-icon name="arrow-forward"></ion-icon>
           </button>
-          <h1 class="slide-title"> !!!! CALIFICACION GENERAL !!!</h1>
+          <rating [rate]="3"
+                readonly="true" 
+                small="false" 
+                (rateChange)="onRateChange($event)">
+            </rating>
         </ion-slide>
         <ion-slide>
           <img src="assets/img/Place/Parque.jpg" class="slide-image"/>
@@ -37,7 +41,11 @@
               Ver Parques disponibles
               <ion-icon name="arrow-forward"></ion-icon>
           </button>
-          <h1 class="slide-title"> !!!! CALIFICACION GENERAL !!!</h1>
+          <rating [rate]="4"
+                    readonly="true" 
+                    small="false" 
+                    (rateChange)="onRateChange($event)">
+            </rating>
         </ion-slide>
         <ion-slide>
             <img src="assets/img/Place/Humedal.jpg" class="slide-image"/>
@@ -46,7 +54,11 @@
                 Ver Humedales disponibles
                 <ion-icon name="arrow-forward"></ion-icon>
             </button>
-            <h1 class="slide-title"> !!!! CALIFICACION GENERAL !!!</h1>
+            <rating [rate]="3"
+                readonly="true" 
+                small="false" 
+                (rateChange)="onRateChange($event)">
+            </rating>
           </ion-slide>
     </ion-slides>
 </ion-content>

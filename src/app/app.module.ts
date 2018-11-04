@@ -13,6 +13,7 @@ import { Items } from '../mocks/providers/items';
 import { Settings, User, Api } from '../providers';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { IonicRatingModule } from 'ionic-rating';
 
 // The translate loader needs to know where to load i18n files
 // in Ionic's static asset pipeline.
@@ -42,6 +43,7 @@ export function provideSettings(storage: Storage) {
   ],
   imports: [
     BrowserModule,
+    IonicRatingModule, // Put ionic-rating module here
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
