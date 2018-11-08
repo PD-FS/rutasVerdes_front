@@ -1,0 +1,16 @@
+page-green-point {
+    #map {
+        padding: 10 px;
+        margin: 10px;
+        height: 70%;
+        width: 100%;
+      }
+    .esri-feature {
+        letter-spacing: 0em;
+        font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+        line-height: 1.55rem;
+        font-feature-settings: "liga"1, "calt"0;
+        background: #fff;
+        padding: 1em;
+    }
+}
